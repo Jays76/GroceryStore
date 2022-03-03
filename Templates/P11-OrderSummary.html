@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Styles/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-custom navbar-dark justify-content-center sticky-top">
+        <a class="navbar-brand" href="index.html"><img src="Image%20Source/logoproject.png" class="rounded-circle" alt="Project Logo" width=35 height="35">SHOPPER'S FOOD MART</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        </div>
+        <div class="navbar-nav ">
+            <a class="nav-item nav-link" href="index.html"><img src="https://img.icons8.com/windows/32/000000/favorite-cart.png" alt="Shopping Cart" width="30" height="30"></a>
+            <a class="nav-item nav-link text-white" href="P5-login.html">Login</a>
+            <a class="nav-item nav-link text-white" href="P6-Sign%20up.html">Register</a>
+        </div>
+    </nav>
+
+    <nav class="navbar-expand-sm bg-light navbar-light top nav-fill w-100 ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <ul class="navbar-nav">
+            <li class="dropdown">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">GROCERY</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="P2-AisleBakery.html">Bakery</a>
+                        <a class="dropdown-item" href="P2-AisleMeat.html">Meat Produce</a>
+                        <a class="dropdown-item" href="P2-AisleDairy.html">Dairy Produce</a>
+                        <a class="dropdown-item" href="P2-AisleFruits.html">Fruits</a>
+                        <a class="dropdown-item" href="P2-AisleVegetables.html">Vegetables</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PX-WorkInProgress.html">FLYER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PX-WorkInProgress.html">RECIPES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PX-WorkInProgress.html">GALLERY</a>
+                </li>
+        </ul>
+    </nav>
+
+    <div class="main content">
+        <!-- <h1>SHOPPER'S FOOD MART</h1>-->
+        <br>
+        <div class="separator">
+            <h2 style="opacity: 0.6">Order Summary</h2>
+        </div>
+        <br>
+        <div class="main content" style="overflow-x:auto;">
+            <table style="width:100%" ; border-style="1px" ;>
+                <!–– column headings ––>
+                <tr>
+                    <th scope="col">#</th>
+                    <th colspan="2"> Product </th>
+                    <th> Price </th>
+                    <th> Quantity </th>
+                    <th colspan="4"> Edit Item </th>
+                </tr>
+                <!–– Now, the table data entries ––>
+                <tr>
+                    <th scope="row">1</th>
+                    <td> <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Apple" height="100" width="100" /> </td>
+                    <td> Apple </td>
+                    <td> $3.00 </td>
+                    <td> 5 </td>
+                    <td>
+                        <a href="P12-OrderEdit.html"><input type="reset" value="Modify Item" /></a>
+                        <input type="reset" value="Delete Item" /></td>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td> <img src="https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Milk" height="auto" width="100" /> </td>
+                        <td> Milk </td>
+                        <td> $3.50 </td>
+                        <td> 1 </td>
+                        <td>
+                            <a href="P12-OrderEdit.html"><input type="reset" value="Modify Item" /></a>
+                            <input type="reset" value="Delete Item" /></td>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td> <img src="https://images.pexels.com/photos/2985167/pexels-photo-2985167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Eggs" height="100" width="auto" /> </td>
+                            <td> Eggs </td>
+                            <td> $2.75 </td>
+                            <td> 6 </td>
+                            <td>
+                                <a href="P12-OrderEdit.html"><input type="reset" value="Modify Item" /></a>
+                                <input type="reset" value="Delete Item" /></td>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td> <img src="https://images.pexels.com/photos/5765/flour-powder-wheat-jar.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Flour" height="100" width="auto" /> </td>
+                                <td> Flour </td>
+                                <td> $5.00 </td>
+                                <td> 1 </td>
+                                <td>
+                                    <a href="P12-OrderEdit.html"><input type="reset" value="Modify Item" /></a>
+                                    <input type="reset" value="Delete Item" /></td>
+                            </tr>
+            </table>
+        </div>
+
+        <div class="main content">
+            <br/>
+            <!–– Person profile ––>
+            <h2 style="opacity: 0.6">Person Profile:</h2>
+            <form action="">
+                <label>Name: </label> <input type="text" size="35" name="name" value="Junior J" readonly/>
+                <br/>
+                <label>Phone Number: </label> <input type="text" size="35" name="phone number" value="5148482424" readonly/>
+                <br/>
+                <label>Enter Address: </label> <input type="text" size="35" name="address" value="1455 Maisonneuve Blvd W" readonly/>
+                <br/>
+                <label>Enter City: </label> <input type="text" size="35" name="city" value="Montreal" readonly/>
+                <br/>
+                <label>Enter Postal Code </label> <input type="text" size="35" name="postal code" value="H3G1M8" readonly/>
+                <br/><br/>
+            </form>
+
+            <p>Delivery Type? </p>
+            <form action="">
+                <input type="radio" name="delivery" value="delivery" checked="checked">
+                <label for="delivery">Delivery</label><br>
+                <input type="radio" name="delivery" value="pickup" disabled>
+                <label for="pickup">Pick-Up</label><br>
+                <br/>
+                <br/>
+
+                <!–– The submit and reset buttons ––>
+                <p>
+                    <a href="P12-OrderEdit.html"><button type="button">Modify Order</button></a>
+                    <input type="submit" value="Submit Order" />
+                </p>
+                <br>
+        </div>
+    </div>
+    <br>
+    <div class="footer bottom">
+        <div class="row text-white">
+            <div class="col-sm-2">
+                <ul class="a">
+                    <li><a class="noDeco" href="PX-WorkInProgress.html">ONLINE</a></li>
+                    <li>Cart List</li>
+                    <li>Mobile Apps</li>
+                    <li>Videos</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <ul class="a">
+                    <li><a class="noDeco" href="PX-WorkInProgress.html">PROMOTIONS</a></li>
+                    <li>Newsletters</li>
+                    <li>Reward Points</li>
+                    <li>Gift Cards</li>
+                    <li>Online Flyer</li>
+                    <li>Contests</li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <ul class="a">
+                    <li><a class="noDeco" href="PX-WorkInProgress.html">JOBS</a></li>
+                    <li>Jobs for you</li>
+                    <li>Management Careers</li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <ul class="a">
+                    <li><a class="noDeco" href="PX-WorkInProgress.html">ABOUT US</a></li>
+                    <li>Donations</li>
+                    <li>Contact Us</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul class="a">
+                    <li><a class="noDeco">BACKSTORE ACCESS</a></li>
+                    <li><a class="noDeco" href="P7-ProductList.html">Product List</a></li>
+                    <li><a class="noDeco" href="P8-ProductEdit.html">Product Edit</a></li>
+                    <li><a class="noDeco" href="P9-UserList.html">User List</a></li>
+                    <li><a class="noDeco" href="P10-EditProfile.html">Edit Profile</a></li>
+                    <li><a class="noDeco" href="P11-OrderSummary.html">Order Summary</a></li>
+                    <li><a class="noDeco" href="P12-OrderEdit.html">Edit Order</a></li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-2 text-white">
+            <h6>Copyright © 2020 ... Inc.</h6>
+        </div>
+    </div>
+
+</body>
+
+</html>

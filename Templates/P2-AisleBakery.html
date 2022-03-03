@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bread and Bakery Aisle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Styles/index.css">
+    <script src="shoppingCart.js"></script>
+</head>
+
+<body onload="showData()">
+    <nav class="navbar navbar-expand-sm bg-custom navbar-dark justify-content-center sticky-top">
+        <a class="navbar-brand" href="index.html"><img src="Image%20Source/logoproject.png" class="rounded-circle" alt="Project Logo" width=35 height="35">SHOPPER'S FOOD MART</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        </div>
+        <div class="navbar-nav ">
+            <a class="nav-item nav-link" href="P4-ShoppingCart.html"><img src="https://img.icons8.com/windows/32/000000/favorite-cart.png" alt="Shopping Cart" width="30" height="30"></a>
+            <a class="nav-item nav-link text-white" href="P5-login.html">Login</a>
+            <a class="nav-item nav-link text-white" href="P6-Sign%20up.html">Register</a>
+        </div>
+    </nav>
+
+    <nav class="navbar-expand-sm bg-light navbar-light top nav-fill w-100 ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <ul class="navbar-nav">
+            <li class="dropdown">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">GROCERY</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="P2-AisleBakery.html">Bakery</a>
+                        <a class="dropdown-item" href="P2-AisleMeat.html">Meat and Poultry</a>
+                        <a class="dropdown-item" href="P2-AisleDairy.html">Dairy Produce</a>
+                        <a class="dropdown-item" href="P2-AisleFruits.html">Fruits</a>
+                        <a class="dropdown-item" href="P2-AisleVegetables.html">Vegetables</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="PX-WorkInProgress.html">FLYER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PX-WorkInProgress.html">RECIPES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PX-WorkInProgress.html">GALLERY</a>
+                </li>
+        </ul>
+    </nav>
+
+    <div class="main content">
+        <br>
+        <br>
+        <div class="separator">
+            <h2 style="opacity: 0.6">BREAD & BAKERY</h2>
+        </div>
+        <br>
+        <br>
+        <div class="main content">
+            <div class="container-fluid" style="text-align:center; padding-bottom: 15px;">
+                <div class="row" style="justify-content: center;">
+                    <div class="col-sm-9 columnFlex" style="text-align:center;">
+
+                        <!--JAVASCRIPT TO POPULATE AISLE-->
+                        <script src="makeBakeryAisle.js"></script>
+
+                    </div>
+                    <div class="col-sm-12" style="overflow-x:auto; text-align: center">
+                        <h4 style="color: #008000"><u>Shopping Cart</u></h4>
+                        <div class="row" id="cartEmpty" style="text-align: center; justify-content: center; display: none">
+                            <p>Cart is empty</p>
+                            <button type="submit" onclick="deleteData()">Empty Cart</button>
+                        </div>
+                        <div class="row" id="cartFull" style="text-align: center; justify-content: center;">
+                            <table id="cartTable">
+                                <tr>
+                                    <td>Item</td>
+                                    <td>Price</td>
+                                    <td>Qty</td>
+                                    <td>Subtotal</td>
+                                    <td>Total Cost</td>
+                                </tr>
+                            </table>
+                            <button type="submit" onclick="deleteData()">Empty Cart</button>
+                            <a href="P4-ShoppingCart.html"><button type="button">View Cart</button></a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="footer bottom">
+            <div class="row text-white">
+                <div class="col-sm-2">
+                    <ul class="a">
+                        <li><a class="noDeco" href="PX-WorkInProgress.html">ONLINE</a></li>
+                        <li>Cart List</li>
+                        <li>Mobile Apps</li>
+                        <li>Videos</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="a">
+                        <li><a class="noDeco" href="PX-WorkInProgress.html">PROMOTIONS</a></li>
+                        <li>Newsletters</li>
+                        <li>Reward Points</li>
+                        <li>Gift Cards</li>
+                        <li>Online Flyer</li>
+                        <li>Contests</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="a">
+                        <li><a class="noDeco" href="PX-WorkInProgress.html">JOBS</a></li>
+                        <li>Jobs for you</li>
+                        <li>Management Careers</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="a">
+                        <li><a class="noDeco" href="PX-WorkInProgress.html">ABOUT US</a></li>
+                        <li>Donations</li>
+                        <li>Contact Us</li>
+                        <li>Terms and Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="a">
+                        <li><a class="noDeco">BACKSTORE ACCESS</a></li>
+                        <li><a class="noDeco" href="P7-ProductList.html">Product List</a></li>
+                        <li><a class="noDeco" href="P8-ProductEdit.html">Product Edit</a></li>
+                        <li><a class="noDeco" href="P9-UserList.html">User List</a></li>
+                        <li><a class="noDeco" href="P10-EditProfile.html">Edit Profile</a></li>
+                        <li><a class="noDeco" href="P11-OrderSummary.html">Order Summary</a></li>
+                        <li><a class="noDeco" href="P12-OrderEdit.html">Edit Order</a></li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2 text-white">
+                <h6>Copyright © 2020 ... Inc.</h6>
+            </div>
+        </div>
+</body>
+
+</html>
